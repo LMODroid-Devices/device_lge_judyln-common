@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -34,7 +34,7 @@ $(call inherit-product, device/lge/sdm845-common/sdm845.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_COMMON_PATH)/overlay \
-    $(DEVICE_COMMON_PATH)/overlay-lineage
+    $(DEVICE_COMMON_PATH)/overlay-lmodroid
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_COMMON_PATH)/vendor.prop
